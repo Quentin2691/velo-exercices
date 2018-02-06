@@ -1,0 +1,153 @@
+<?php
+session_start();
+$_SESSION["nom"] = "J";
+$_SESSION["prenom"]="Paul" ;
+$message= null;
+    if (!empty($_POST)){
+      if (isset($_POST["login"]) && isset($_POST["password"])){
+         $validLogin = "administrateur";
+         $validPassword = 26;
+       if($_POST["login"] == $validLogin){
+          if($_POST["password"] == $validPassword){
+            header("location:header.php");
+
+          }else {
+              $message ="password incorrect";
+          }
+      }else{
+        $message = "Le login  incorrect";
+     }
+   } 
+ }
+ ?>
+
+
+
+    <!DOCTYPE html>
+
+
+
+
+    <html>
+
+    <head>
+
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+        <meta charset="utf8">
+        <title> Velo.Be </title>
+    </head>
+
+    <body>
+        <h1> Velo</h1>
+        </form>
+        <form action="" method="POST">
+            <input type="texte" placeholder="login" name="login">
+            <input type="password" placeholder="password" name="password">
+            <input type="submit" value="connecter">
+        </form>
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <a class="navbar-brand" href="#">Home</a>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="accueil.php">accueil</a>
+                </li>
+                <li>
+                    <a href="commune.php"> commune</a>
+                </li>
+                <li>
+                    <a href="contact.php"> contact</a>
+                </li>
+                <li>
+                    <a href="ad.php"> admit</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id="carousel-id" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-id" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-id" data-slide-to="1" class="active"></li>
+                <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img data-src="foret.jpg" alt="Third slide" src="../assets/img/foret.jpg">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>forêt</h1>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <img data-src="acrroche velo" alt="Second slide" src="../assets/img/porte-velo-dionysos-002083863-product_zoom.png">
+                    <div class="container">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item active">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Le velo une priorité.</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div>
+        var vitesse = 65; // Complétez la condition entre les parenthèses de la ligne 4 if (vitesse>80 ) { // Utilisez console.log()
+        pour afficher "Ralentissez" console.log ("Ralentissez"); } else { // Utilisez console.log() pour afficher "Roulez
+        prudemment" console.log ("Roulez prudement"); }
+
+
+        <h2> Ici vous trouverez les Velo disponibles </h2>
+        <center>
+            <iframe style="border: 2;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2710.207049454749!2d-1.5729033!3d47.2125309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ec0fcda6c4cb%3A0xd620ca38dafa1e9a!2s2+Rue+La+Motte+Picquet%2C+44100+Nantes!5e0!3m2!1sfr!2sfr!4v1423244007186"
+                width="600" height="450" frameborder="0"></iframe>
+        </center>
+        <col3>
+            <col6>
+
+
+            </col6>
+        </col3>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="accueil.php">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a></li>
+                    <li><a href="#">Menu 3</a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../images/menu_image_1.jpg">
+                    </div>
+                    <div class="col-md-7">
+                        <h4>Deer Steak with Potatoes</h4>
+
+                        <p>Welcome to Risotto restaurant website.Here we try to share our
+                        </p>
+                    </div>
+                    <div class="col-md-2">
+                        <h4>$25</h4>
+                    </div>
+                </div>
+
+            </div>
+
+    </body>
+
+    </html>

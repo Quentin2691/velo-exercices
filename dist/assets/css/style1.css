@@ -1,0 +1,17 @@
+tr,th,h1{
+border: 10px solid black;
+background-color: grey;
+background-position: active
+
+
+}
+
+body{
+    background-color: grey
+}
+p.inline {
+    display: inline;
+}
+img{
+    position: active;
+}
